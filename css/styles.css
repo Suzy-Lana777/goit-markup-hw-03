@@ -21,8 +21,23 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
   button {
    cursor: pointer;
+   display: block;
  }
 
 .container {
@@ -31,6 +46,9 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
 }
 
+.img {
+  display: block;
+}
  /* ========= /COMMON STYLES =========== */
 
  /* ========= HEADER STYLES ============ */
@@ -119,15 +137,31 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ========= PAGE SOLUTIONS ============ */
 
+.section-paddings {
+  padding: 120px 0px;
+}
+
  .title-section {
    background-color: #2e2f42;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 188px 0;
+  }
+
+  .background-section {
+   max-width: 1440px;
+   margin-left: auto;
+   margin-right: auto;
   }
 
  .title-section .effective-name {
    letter-spacing: 0.02em;
   }
 
- .effective-name {
+  .effective-name {
+    max-width: 496px;     
+    margin: 0 auto;
+    margin-bottom: 48px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -136,13 +170,19 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
  .btn-service {
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    background-color: #4D5AE5 
+    background-color: #4d5ae5 
    }
 
   .btn-service:hover,
@@ -154,7 +194,16 @@ h1, h2, h3, h4, h5, h6, p {
 
   /* ========= /PAGE SOLUTIONS ============ */
 
-  /* ========= SESTION OF QUALITIES ========= */
+  /* ========= SECTION OF QUALITIES ========= */
+
+.solutions-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.list-item {
+  width: calc((100% - 72px) / 4);
+}
 
 .title-solutions {
   font-weight: 500;
@@ -164,14 +213,22 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2e2f42;
 }
   
+.team-hero {
+   display: flex;
+}
 
 
-/* ========= /SESTION OF QUALITIES ========= */
+/* ========= /SECTION OF QUALITIES ========= */
 
 /* ========= PAGE OF TEAM AND PORTFOLIO ================ */
 
 .team-card {
   background: #f4f4fd;
+}
+
+.team-hero {
+  display: flex;
+  column-gap: 24px;
 }
 
 .name-section {
@@ -182,10 +239,15 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 72px;
 }
 
 .name-team {
+  width: calc((100% - 72px) / 4);
   background-color: #fff;
+  
 }
 
 .item-name {
@@ -196,11 +258,43 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: left;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+
+.title-solutions {
+  padding-left: 0;
 }
 
 .hero-text {
   text-align: left;
-  }
+}
+
+.text-padding {
+  padding-left: 16px;
+} 
+
+.item-text {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;  
+}
+
+.text-center {
+  text-align: center;
+}
+
+.portfolio-card {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.main-app {
+  width: calc((100% - 48px) / 3);
+}
 
 /* ========= /PAGE OF TEAM AND PORTFOLIO ================ */
 
@@ -209,6 +303,12 @@ h1, h2, h3, h4, h5, h6, p {
 .page-footer {
   font-family: "Raleway", sans-serif;
   background: #2e2f42;
+}
+
+.footer-container {
+  display: block;
+  align-items: center;
+  padding: 100px 0;
 }
 
 .footer-logo .logo-part {
@@ -222,9 +322,11 @@ h1, h2, h3, h4, h5, h6, p {
 
   .footer-logo .logo-part {
    color: #f4f4fd;
+   padding-bottom: 16px;
  }
 
  .footer-text {
    color: #f4f4fd;
+   max-width: 264px;
  }
  
