@@ -43,8 +43,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .container {
   max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
@@ -207,7 +209,7 @@ img {
 }
 
 .list-item {
-  flex-basis: calc((100% - 72px) / 4);
+   width: calc((100% - 72px) / 4);
 }
 
 .list-item:not(:last-child) {
@@ -282,6 +284,13 @@ img {
 
 .item-text {
   padding: 32px 0;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
+.item-padding {
+   padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
