@@ -13,7 +13,7 @@
  ul, 
  ol {
    list-style-type: none;
-   padding: 0;
+   padding-left: 0;
    margin: 0;
  }
  
@@ -206,7 +206,8 @@ img {
 }
 
 .list-item {
-  width: calc((100% - 72px) / 4);  
+  width: calc((100% - 72px) / 4);
+  
 }
 
 .list-item:not(:last-child) {
@@ -236,7 +237,7 @@ img {
 
 .team-hero {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .name-section {
@@ -284,7 +285,7 @@ img {
 } 
 
 .item-text {
-  /* padding: 32px 16px; */
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -313,10 +314,10 @@ img {
 .page-footer {
   font-family: "Raleway", sans-serif;
   background: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-container {
-  display: block;
   align-items: center;
   padding: 100px 0;
 }
@@ -328,11 +329,11 @@ img {
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: #4d5ae5;
-   display: inline-block; 
-  }
+ }
 
   .footer-logo .logo-part {
    color: #f4f4fd;
+   display: inline-block;
    margin-bottom: 16px;
  }
 
