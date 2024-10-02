@@ -205,16 +205,16 @@ img {
 
 .solutions-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .list-item {
    width: calc((100% - 72px) / 4);
 }
 
-.list-item:not(:last-child) {
+/* .list-item:not(:last-child) {
   margin-right: 24px;
-}
+} */
 
 .title-solutions {
   font-weight: 500;
