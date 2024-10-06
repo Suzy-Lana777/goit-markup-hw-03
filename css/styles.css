@@ -151,12 +151,6 @@ img {
    padding: 188px 0;
   }
 
-  .background-section {
-   max-width: 1440px;
-   margin-left: auto;
-   margin-right: auto;
-  }
-
  .title-section .effective-name {
    letter-spacing: 0.02em;
   }
@@ -265,8 +259,6 @@ img {
   text-align: left;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 8px;
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 
@@ -290,7 +282,7 @@ img {
 }
 
 .item-padding {
-   padding: 32px 16px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -316,7 +308,6 @@ img {
 /* ========= PAGE OF FOOTER =========== */
 
 .page-footer {
-  font-family: "Raleway", sans-serif;
   background: #2e2f42;
   padding: 100px 0;
 }
